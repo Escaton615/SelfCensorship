@@ -27,15 +27,14 @@ function DuduTree:Filter(raw)
 				else 
 					ret = ret..original
 				end
-				matching = false
-				censored = ""
-				original = ""
 				if self.tree[uchar] ~= nil then
 					matching = true
 					current = self.tree[uchar]
 					censored = "*"
 					original = uchar
 				else
+					matching = false
+					original = ""
 					current = self.tree
 					ret = ret..uchar
 				end
