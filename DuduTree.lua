@@ -28,7 +28,6 @@ function DuduTree:Filter(raw)
 					ret = ret..original
 				end
 				if self.tree[uchar] ~= nil then
-					matching = true
 					current = self.tree[uchar]
 					censored = "*"
 					original = uchar
